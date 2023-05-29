@@ -12,7 +12,7 @@ import json
 
 RANDOM_STATE: np.int_ = 42
 TEST_SIZE: np.float_ = 0.2
-EPOCHS: np.int_ = 25
+EPOCHS: np.int_ = 100
 
 sms: pd.DataFrame = pd.read_csv(
     "data/spam.csv",
