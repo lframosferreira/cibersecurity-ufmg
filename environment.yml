@@ -179,4 +179,3 @@ dependencies:
       - pip==23.1.2
       - tensorflow-io-gcs-filesystem==0.32.0
       - tensorflow-text==2.12.1
-prefix: /home/lfrf/anaconda3/envs/cibersecurity
