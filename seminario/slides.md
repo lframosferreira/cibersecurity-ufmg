@@ -24,7 +24,7 @@ output:
 ## Vulnerabilidade de componentes de Software
 
 - Fraqueza no sistema
-  - Suscetibilidade a ser explorada por ameaçãr ou problemas aleatórios
+  - Suscetibilidade a ser explorada por ameaças ou problemas aleatórios
   - Sistema vulnerável: existe uma oportunidade para uma ameaça quebrar sua segurança
 
 - Causas
@@ -53,12 +53,12 @@ output:
 ## Trabalhos relacionados
 
 - Aprendizado de máquina já foi aplicado na área da cibersegurança
-  - Diferentes features de classificação foram utilizadas, em diversas bases de dados
+  - Diferentes *features* de classificação foram utilizadas, em diversas bases de dados
   - Diferentes objetivos: localizar vulnerabilidades, identificar correlações entre variáveis, etc
   - Muitas visavam predizer defeitos e não necessariamente vulnerabilidades
 
 - Análise estática de código
-  - *Fortify Source Code Analyzer* (SCA) - ferramenta de anaślise estática de código para identificar potencias vulnerabilidades no código
+  - *Fortify Source Code Analyzer* (SCA) - ferramenta de análise estática de código para identificar potencias vulnerabilidades no código
   - Utilizado para criação das *labels* do conjunto de dados
 
 ## Metodologia de pesquisa
@@ -108,14 +108,14 @@ $$
   - Número de versões (ao menos 5)
 
 - 10 aplicações escolhidas ao final
-- 10 aplicações extras provindas de pré-instalaçoes do *Android OS* foram adicionadas
+- 10 aplicações pré-instaladas do *Android* foram adicionadas
 
 ## Conjunto de variáveis relevantes
 
 ### Variáveis dependentes
 
 - Ferramentas de análise estática de código são custosas
-- SCA - Escaneia o código e monta um relatório de possíveis falhas
+- SCA: escaneia o código e monta um relatório de possíveis falhas
 - Reporta tipo de vulnerabilidade juntamente com sua escala de ameaça (trabalhos futuros)
 
 ### Variáveis independentes
