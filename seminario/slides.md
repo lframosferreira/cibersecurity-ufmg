@@ -2,18 +2,18 @@
 title: "Predictinf Vulnerable Software Components via Text Mining"
 author: Luís Felipe Ramos Ferreira
 date: 02 de Junho 2023
-output: 
-    beamer_presentation:
-        theme: Boadilla"
-        colortheme: "dolphin"
-        fonttheme: "structurebold"
+output:
+  beamer_presentation:
+    theme: Boadilla"
+    colortheme: "dolphin"
+    fonttheme: "structurebold"
 ---
 
 # Conceitos principais
 
 ## Mineração de dados/texto
 
--  Técnica de aprendizado de máquina
+- Técnica de aprendizado de máquina
 
 - Extração de informação e características
 
@@ -24,15 +24,15 @@ output:
 ## Vulnerabilidade de componentes de Software
 
 - Fraqueza no sistema
-    - Suscetibilidade a ser explorada por ameaçãr ou problemas aleatórios
-    - Sistema vulnerável: existe uma oportunidade para uma ameaça quebrar sua segurança
+  - Suscetibilidade a ser explorada por ameaçãr ou problemas aleatórios
+  - Sistema vulnerável: existe uma oportunidade para uma ameaça quebrar sua segurança
 
 - Causas
-    - Erros
-    - Falhas no projeto de software
+  - Erros
+  - Falhas no projeto de software
 
 - Exemplos
-    - Códigos com vazamento de memória
+  - Códigos com vazamento de memória
 
 # Projeto de pesquisa realizado
 
@@ -41,25 +41,25 @@ output:
 - Utilização de técnicas de mineração de textos para classificação de vulnerabilidades em componentes de Software
 
 - Grande relevância no mundo contemporâneo
-    - Internet das Coisas
-    - Privacidade e segurança
+  - Internet das Coisas
+  - Privacidade e segurança
 
 - Hipótese principal: conseguir classificar códigos que contenham vulnerabilidades
 
 - Aplicações e impactos
-    - Demonstra força da área de ciência de dados aplicada à cibersegurança
-    - Redução de custos, mais segurança, etc
+  - Demonstra força da área de ciência de dados aplicada à cibersegurança
+  - Redução de custos, mais segurança, etc
 
 ## Trabalhos relacionados
 
 - Aprendizado de máquina já foi aplicado na área da cibersegurança
-    - Diferentes features de classificação foram utilizadas, em diversas bases de dados
-    - Diferentes objetivos: localizar vulnerabilidades, identificar correlações entre variáveis, etc
-    - Muitas visavam predizer defeitos e não necessariamente vulnerabilidades
+  - Diferentes features de classificação foram utilizadas, em diversas bases de dados
+  - Diferentes objetivos: localizar vulnerabilidades, identificar correlações entre variáveis, etc
+  - Muitas visavam predizer defeitos e não necessariamente vulnerabilidades
 
 - Análise estática de código
-    - *Fortify Source Code Analyzer* (SCA) - ferramenta de anaślise estática de código para identificar potencias vulnerabilidades no código
-    - Utilizado para criação das *labels* do conjunto de dados
+  - *Fortify Source Code Analyzer* (SCA) - ferramenta de anaślise estática de código para identificar potencias vulnerabilidades no código
+  - Utilizado para criação das *labels* do conjunto de dados
 
 ## Metodologia de pesquisa
 
@@ -70,10 +70,10 @@ output:
 - Métrica para construção das *labels*: um código é dito vulnerável se a ferramenta SCA aponta um ou mais avisos em sua análise e não vulnerável caso contrário
 
 - Predições analisadas com base em uma matriz de confusão
-    - Verdadeiros positivos (TP)
-    - Falsos positivos (FP)
-    - Falsos negativos (FN)
-    - Verdadeiros negativos (TN)
+  - Verdadeiros positivos (TP)
+  - Falsos positivos (FP)
+  - Falsos negativos (FN)
+  - Verdadeiros negativos (TN)
 
 ## Indicadores de performance
 
@@ -103,9 +103,9 @@ $$
 - Aplicações *mobile* da plataforma *Android*
 
 - Considerações nas decisões:
-    - Linguagem de Programação (Java)
-    - Tamanho (1000 linhas de código no mínimo)
-    - Número de versões (ao menos 5)
+  - Linguagem de Programação (Java)
+  - Tamanho (1000 linhas de código no mínimo)
+  - Número de versões (ao menos 5)
 
 - 10 aplicações escolhidas ao final
 - 10 aplicações extras provindas de pré-instalaçoes do *Android OS* foram adicionadas
@@ -115,7 +115,7 @@ $$
 ### Variáveis dependentes
 
 - Ferramentas de análise estática de código são custosas
-- SCA - Escaneia o código e monta um relatório de possíveis falhas 
+- SCA - Escaneia o código e monta um relatório de possíveis falhas
 - Reporta tipo de vulnerabilidade juntamente com sua escala de ameaça (trabalhos futuros)
 
 ### Variáveis independentes
@@ -126,11 +126,11 @@ $$
 ## Exemplos
 
 \begin{center}
-    \includegraphics[width=0.6\textwidth]{images/first.png}
+    \includegraphics [width=0.6\textwidth] {images/first.png}
 \end{center}
 
 \begin{center}
-    \includegraphics[width=0.6\textwidth]{images/second.png}
+    \includegraphics [width=0.6\textwidth] {images/second.png}
 \end{center}
 
 ## Técnicas de aprendizado de máquina utilizadas
