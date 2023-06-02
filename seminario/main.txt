@@ -1,0 +1,51 @@
+ESTRUTURA DO SEMINÁRIO
+
+Predizer vulnerabilidades por meio de mineração de textos
+
+1 - Introdução
+
+- O que sao vulnerabilidades? Por que querem predizer elas?
+O que é mineração de textos? Como aplicar em vulnerabilidades?
+Contexto geral do expriemnto (1)
+
+- Alguns exemplos dados de predição de vulnerabilidades/defeitos, principalmente defeitos (2)
+
+- Static Code Analysis (2.2)
+
+2 - Metodologia de pesquisa
+
+- Objetivo: criar modelo binária pra classificar presença de vulnerabilidades
+- Uso de SCA tools para classificar de acordo com treshold
+
+- Indicadores de performance (falar de matriz de confusao e metricas) -> DETALHE: dada a natureza do problema,
+recall é mais importante
+- Falar da métrica Fallout também
+
+- Como decidiram quais aplicações usar e com base em querem
+- Quais e quantas acabaram sendo usadas
+- Qual SCA tool usou
+- Como usarqam os textos para classificação: vector of terms de aruivos java
+
+
+- Métricas de ML usadas: algoritmos que usaram inicialmente, quais melhores desempenharam e eles mantiveram
+- Discretização dos dados foi muito bom para diminuir os vector of terms
+
+TENDO ISSO EM MENTE, OA RTIGO QUIS RESPONDER:
+
+- um modelo preditivo pode ser criado?
+- um modelo preditivo pode ser util para predizer vulnerabilidades em proximas versoes do mesmo app?
+- um modelo preditivo entre aplicações pode existir?
+
+3 - Experimentos
+
+3.1 - Experimento 1 - Cross validation
+
+- Cross validation
+- Falar sobre tamanhos de arquivo no treino
+- Sobre falsos positivos
+
+3.2 Experimento 2 - No futuro
+
+3.3 Experimento 3 - Predição entre projetos
+
+4. Conclusões e trabalhos futuros
