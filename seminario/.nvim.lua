@@ -12,3 +12,12 @@ au("BufWritePost", {
 	pattern = "*.md",
 	command = "Make",
 })
+
+require("ufo").setup({
+	provider_selector = function(_, filetype, _)
+		if filetype == "markdown" then
+			return { "treesitter", "indent" }
+		end
+		return { "lsp", "indent" }
+	end,
+})
