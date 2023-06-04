@@ -2,8 +2,6 @@
 title: "Predicting Vulnerable Software Components via Text Mining"
 author: Luís Felipe Ramos Ferreira
 lang: pt
-# TODO: escolher um tema
-# theme: Boadilla
 fonttheme: structurebold
 colortheme: beaver
 ---
@@ -286,4 +284,25 @@ $$
 
 ## Ameaças à validade
 
+- Não foi feito uso de um banco de dados de vulnerabilidades
+  - Ao invés disso, foi usada uma ferramenta de análise estática de código
+  - Existe uma correlação entre essas alternativas, mas há uma tendência produzir muitos falsos positivos
+  - Validação manual para mitigar esse problema
+- Apenas arquivos Java foram analisados
+  - Arquivos XML contém, por exemplo, permissões usadas pelos aplicativos
+- Vulnerabilidades que se mantiveram através das versões podem ter inflado os resultados
+- É necessário um estudo em escala maior
+  - Os resultados podem ser específicos dos aplicativos selecionados
+  - Variação dos tipos de programas
+
+## Ameaças à validade
+
+- Validação manual não foi extensiva
+- Análise muito específica
+  - Limitação da época
+    - Ambiente Android mais diverso atualmente
+
 ## Conclusões
+
+- Variação do nível dos componentes (classes, métodos)
+- Análise poderia ser complementar a métodos já existentes
