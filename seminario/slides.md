@@ -1,6 +1,8 @@
 ---
 title: "Predicting Vulnerable Software Components via Text Mining"
-author: Luís Felipe Ramos Ferreira
+author: 
+- Luís Felipe Ramos Ferreira\newline
+- Igor Lacerda Faria da Silva
 lang: pt
 fonttheme: structurebold
 colortheme: beaver
