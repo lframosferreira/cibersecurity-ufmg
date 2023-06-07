@@ -1,5 +1,6 @@
 ---
 title: "Predicting Vulnerable Software Components via Text Mining"
+subtitle: "Riccardo Scandariato, James Walden, Aram Hovsepyan and Wouter Joosen"
 author: 
 - Luís Felipe Ramos Ferreira\newline
 - Igor Lacerda Faria da Silva
@@ -138,7 +139,7 @@ $$
 
 - Inicialmente, cinco algoritmos famosos foram considerados
 
-- Dois apresentaram melhores resultados inciais: *Naive Bayes* (NB) e *Random Forest* (RF)
+- Dois apresentaram melhores resultados iniciais: *Naive Bayes* (NB) e *Random Forest* (RF)
 
 - Ferramenta utilizada: Weka
 
