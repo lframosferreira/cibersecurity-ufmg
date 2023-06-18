@@ -1,3 +1,7 @@
-__pycache__/
+# general
+**/__pycache__/
 
+# project 1
 project_1/models/bert.h5
+
+# project 3

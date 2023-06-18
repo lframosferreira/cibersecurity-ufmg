@@ -1,0 +1,47 @@
+1. A geração da colisão demorou aproximadamente 2,243 segundos. A seguir pode-se ver a saída no temrminal
+após a execução do comando.
+
+MD5 collision generator v1.5
+by Marc Stevens (http://www.win.tue.nl/hashclash/)
+
+Using output filenames: 'file1' and 'file2'
+Using initial value: 0123456789abcdeffedcba9876543210
+
+Generating first block: ..........
+Generating second block: W..
+Running time: 2.23435 s
+
+real    0m2,243s
+user    0m2,242s
+sys     0m0,001s
+
+2. 
+- file1
+
+58b9a8617f58edc6bbb5abbbbf6db9f41d5aabd40dfa0d045df23f997020
+0d53d5eb0debf0d629d18fc8ce23e0fdf8d11f4c2950c6323df4c9e5a370
+a369fd51dee19a09bdd5c4aa8f7b21e64b4a08073934eb28ffb2062ef698
+9847cf96ed9d5d70b6661f1a2987122f4d728ebc09ff3ad53b35b6cbc39a
+d122837c6be82484
+
+- file2
+
+58b9a8617f58edc6bbb5abbbbf6db9f41d5aab540dfa0d045df23f997020
+0d53d5eb0debf0d629d18fc8ce23e07df9d11f4c2950c6323df4c9e5a3f0
+a369fd51dee19a09bdd5c4aa8f7b21e64b4a08073934eba8ffb2062ef698
+9847cf96ed9d5d70b6661f1a2987122f4d728e3c09ff3ad53b35b6cbc39a
+d12283fc6be82484
+
+3.
+
+MD5(file1)= 821c23e526742fa47705a8d4b254450a
+MD5(file2)= 821c23e526742fa47705a8d4b254450a
+
+Podemos notar que os hashed md5 são iguais.
+
+4.
+
+SHA2-256(file1)= 0a8f15acc807c70d3a71adc29553f86f6fc5ce3286f9db75d55be7c54080d23a
+SHA2-256(file2)= 2dc100aa45de76d066335fc82c41d04be33b018399621fc63c586609f441a590
+
+Podemos notar, no entanto, que os hashed SHA-256 não são iguais.
