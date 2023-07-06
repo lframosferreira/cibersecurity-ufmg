@@ -6,7 +6,7 @@
 
 ### Luís Felipe Ramos Ferreira - 2019022553
 
-#### [Repositório](https://github.com/lframosferreira/cibersecurity-ufmg/tree/main/project_2/)
+#### [Link para o repositório](https://github.com/lframosferreira/cibersecurity-ufmg/tree/main/project_2/)
 
 - Parte 1 - _Exploits_ dos alvos 1 e 2
 
@@ -23,11 +23,23 @@
 
   O alvo 3 parece conter mais um caso de vulnerabilidade devido a _overflow_, mas dessa vez relacionado a números
   inteiros, que pode ser exlorado na função _foo_. Em particular, na função, há uma checagem, antes da cópia, se a variável _count_ é menor do que a constante definida _MAX_WIDGETS_. No entanto, o valor de _count_ pode ser manipulado para que essa condição seja aceita mesmo quando não deveria. Uma estratégia seria utilizar dos conceitos de tipos de inteiros com e sem sinais em C para alterar o tamanho do _buffer_ e assim inserir o _shellcode_ no programa.
-  
+
   O alvo 4 sofre da mesma vulnerabilidade do alvo 2. O _typo_ presente no laço _for_ feito na função auxiliar de cópia de _strings_ permite que um _byte_ extra seja adicionado na cópia. Ademais, a manipulação dos ponteiros da função _foo_, após o _buffer overflow_, pode permitir que o ponteiro de execução seja direcionado para o _shellcode_ já citado.
 
-  O alvo 5 também sofre de uma vulnerabilidade de _stack overflow_ 
+  Para explorar o alvo 5, utilizei o _script_ _find_gadgets.py_ para explorar os _gadgets_ em potencial que permitiriam explorar o _shellcode_. Os resultados foram salvos em um arquivo para análise, mas não obtive sucesso em encontrar a vulnerabilidade para por em prática. No entanto, na teoria, a ideia se resume em encontrar a posição de memória vulnerável que permite manipular o código e executar o _shellcode_.
 
 - Parte 3 - Vulnerabilidades em um programa do mundo real (bdstar)
 
-  O _backtrace_ e os comentários estão presentes no _README_ do diretório _fuzz_, como solicitado. O _link_ com redirecionamento para o repositório público no _GitHub_ está disposto nos _headers_ deste arquivo.
+  Após utilizar o _GDB_, o resultado da análise dos dois _crashes_ encontrados foram os seguintes:
+
+  Podemos ver que ambas aconteceram no arquivo _libarchive/archive_read_support_filter_compress.c_ a falha ocorrida foi de _Segmentation fault_, que ocorreu provavelmente ao tentar dereferenciar o ponteiro _state_, que provavelmente não é acessível, e por isso o erro e a consequente vulnerabilidade.
+
+  ![_Crash_ 1](/home/lfrf/ufmg/ciber/cibersecurity-ufmg/project_2/report/images/segfault1.png)
+
+  ![_Crash_ 2](/home/lfrf/ufmg/ciber/cibersecurity-ufmg/project_2/report/images/segfault2.png)
+
+  O _backtrace_ do _GDB_ pode ser visto abaixo:
+
+  ![_Backtrace_](/home/lfrf/ufmg/ciber/cibersecurity-ufmg/project_2/report/images/bt.png)
+
+  O _link_ com redirecionamento para o repositório público no _GitHub_ está disposto nos _headers_ deste arquivo.
